@@ -16,8 +16,7 @@ int main()
         if (a == 2) {
             triangle();
             break;
-        }
-        else {
+        } else {
             printf("Error\n");
             return 0;
         }
