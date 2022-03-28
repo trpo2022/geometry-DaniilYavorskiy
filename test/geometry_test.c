@@ -44,7 +44,6 @@ CTEST(geometry_suite, simple_not_overlap)
     ASSERT_EQUAL(exp, res);
 }
 
-
 CTEST(geometry_suite, simple_circle_area)
 {
     double r = 3, s;
@@ -53,18 +52,14 @@ CTEST(geometry_suite, simple_circle_area)
 
     if (r > 0) {
         s = M_PI * r * r;
-	if (s > 27)
-	{
-		res = 1;
-	}	   
-        else
-	{
-		res = 0;
-	}
-   }
+        if (s > 27) {
+            res = 1;
+        } else {
+            res = 0;
+        }
+    }
     ASSERT_EQUAL(exp, res);
 }
-
 
 CTEST(geometry_suite, simple_circle_perimetr)
 {
@@ -74,16 +69,11 @@ CTEST(geometry_suite, simple_circle_perimetr)
 
     if (r > 0) {
         p = M_PI * r * 2;
-	if (p > 17)
-	{
-		res = 0;
-	}	   
-        else
-	{
-		res = 1;
-	}
-   }
+        if (p > 17) {
+            res = 0;
+        } else {
+            res = 1;
+        }
+    }
     ASSERT_EQUAL(exp, res);
 }
-
-
