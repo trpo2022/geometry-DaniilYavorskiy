@@ -1,6 +1,6 @@
+#include "check.h"
 #include <math.h>
 #include <stdio.h>
-#include "check.h"
 
 int check(
         double x0,
