@@ -1,3 +1,3 @@
 #pragma once
 
-void circle();
+void circle(double);

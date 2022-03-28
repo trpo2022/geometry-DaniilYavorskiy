@@ -1,3 +1,3 @@
 #pragma once
 
-void triangle();
+void triangle(double, double, double, double, double, double);
