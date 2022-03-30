@@ -6,7 +6,8 @@
 
 CTEST(geometry_suite, simple_overlap)
 {
-    double x0 = 0, y0 = 0, r = 3, x1 = 0, y1 = 0, x2 = 2, y2 = 5, x3 = 5, y3 = 0;
+    double x0 = 0, y0 = 0, r = 3, x1 = 0, y1 = 0, x2 = 2, y2 = 5, x3 = 5, 
+ y3 = 0;
     float a, b, c;
     const int exp = 1;
     int res;
@@ -25,7 +26,8 @@ CTEST(geometry_suite, simple_overlap)
 
 CTEST(geometry_suite, simple_not_overlap)
 {
-    double x0 = -3, y0 = -3, r = 3, x1 = 4, y1 = 0, x2 = 5, y2 = 8, x3 = 6, y3 = 0;
+    double x0 = -3, y0 = -3, r = 3, x1 = 4, y1 = 0, x2 = 5, y2 = 8, x3 = 6, 
+ y3 = 0;
     float a, b, c;
     const int exp = 0;
     int res;
