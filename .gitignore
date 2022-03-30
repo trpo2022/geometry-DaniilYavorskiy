@@ -1,5 +1,8 @@
 *.o
 *.a
 *.d
+*geometry
+*test
+
 
 
