@@ -25,6 +25,6 @@ jobs:
         run: ./bin/tests
 
       - name: run test
-        run: ./bin/tests2
+        run: ./bin/test_2
 
 
