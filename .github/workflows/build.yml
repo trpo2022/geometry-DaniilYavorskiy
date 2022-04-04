@@ -13,7 +13,7 @@ jobs:
         run: make
 
       - name: Build application
-        run: make test
+        run: make tests
 
       - name: Build application
         run: make test2
