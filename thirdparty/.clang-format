@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 Language:        Cpp
 AccessModifierOffset: -4
@@ -84,3 +85,10 @@ TabWidth:        8
 UseTab:          Never
 ...
 
+||||||| empty tree
+=======
+---
+DisableFormat: true
+SortIncludes: false
+...
+>>>>>>> 3ca4c74cf3db42485d963a5c7f016bc53c140ec2
