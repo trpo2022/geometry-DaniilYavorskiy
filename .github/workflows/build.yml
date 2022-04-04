@@ -16,7 +16,7 @@ jobs:
         run: make tests
 
       - name: Build application
-        run: make test2
+        run: make test_2
 
       - name: run app
         run: ./bin/main
