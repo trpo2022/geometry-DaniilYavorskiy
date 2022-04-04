@@ -15,18 +15,16 @@ jobs:
       - name: Build application
         run: make
 
-      - name: Build test1
+      - name: Build application
         run: make test1
+
+      - name: Build application
+        run: make test2
 
       - name: Run tests
         run:  ./bin/test1
 
-      - name: Build test2
-        run: make test2
-
       - name: Run tests
         run:  ./bin/test2
-
-
 
 
