@@ -3,6 +3,15 @@ CCFLAGS = -Wall -Wextra -Wshadow -Wno-unused-parameter
 
 all: bin/main
 
+obj/src/main/test1.o: test/test1.c
+	gcc -c $(CCFLAGS) -o $@ $< -lm
+
+obj/src/main/glavnuy_test1.o: test/glavnuy_test1.c
+	gcc -c $(CCFLAGS) -o $@ $< -lm
+
+test1: obj/src/main/test1.o obj/src/main/glavnuy_test1.o
+	gcc $(LDLAGS) -o $@ $^ -lm -o bin/test1 
+
 obj/src/main/test2.o: test/test2.c
 	gcc -c $(CCFLAGS) -o $@ $< -lm
 
@@ -10,16 +19,7 @@ obj/src/main/glavnuy_test2.o: test/glavnuy_test2.c
 	gcc -c $(CCFLAGS) -o $@ $< -lm
 
 test2: obj/src/main/test2.o obj/src/main/glavnuy_test2.o
-	gcc $(LDLAGS) -o $@ $^ -lm -o bin/test_2 
-
-obj/src/main/test1.o: test/test1.c
-	gcc -c $(CCFLAGS) -o $@ $< -lm
-
-obj/src/main/glavnuy_test.o: test/glavnuy_test.c
-	gcc -c $(CCFLAGS) -o $@ $< -lm
-
-test: obj/src/main/test1.o obj/src/main/glavnuy_test.o
-	gcc $(LDLAGS) -o $@ $^ -lm -o bin/tests 
+	gcc $(LDLAGS) -o $@ $^ -lm -o bin/test2
 
 bin/main: obj/src/main/main.o obj/src/libmake/libmake.a
 	gcc $(CFLAGS) -o $@ $^ -lm
