@@ -37,4 +37,4 @@ obj/src/libmake/functions.o: src/libmake/functions.c
 .PHONY: clean
 
 clean:
-	rm obj/src/libmake/*.a obj/src/libmake/*.o bin/main
+	rm obj/src/libmake/*.a obj/src/libmake/*.o bin/main bin/test1 bin/test2
